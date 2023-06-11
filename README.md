@@ -9,11 +9,13 @@ Este proyecto consiste en un programa en C++ que permite almacenar información 
 - Permite ordenar los cursos que se están brindando, incluyendo información del maestro, especialidad y fecha.
 - El programa solicita los datos al usuario, con un máximo de ingreso de 20 empleados.
 - Incluye un menú de opciones que se muestra al iniciar el programa, con las siguientes funcionalidades:
-    - Buscar cursos por maestro.
-    - Buscar cursos por especialidad.
-    - Buscar cursos por tiempo brindado por el usuario (mayor o menor al año ingresado).
-    - Modificar datos utilizando una contraseña previamente definida.
-    - Salir del programa (se mantiene abierto hasta que el usuario decida salir).
+  - Buscar cursos por maestro.
+  - Buscar cursos por especialidad.
+  - Buscar cursos por tiempo brindado por el usuario (mayor o menor al año ingresado).
+  - Permitir al usuario modificar cualquier dato de los maestros, incluyendo nombre, país, edad y especialidad. También se puede agregar o actualizar cursos y fechas de los cursos.
+  - Ver la lista de maestros creados.
+  - Salir del programa (se mantiene abierto hasta que el usuario decida salir).
+
 
 ## Uso del programa
 
