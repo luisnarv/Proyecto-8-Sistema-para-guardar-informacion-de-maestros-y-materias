@@ -1,0 +1,172 @@
+    //------------------------------- CASE 1 SIN MODIFICAR  ------------------------------------------------------
+
+            // Caso 1 para agregar un nuevo empleado
+            // case 1:
+            //     cout << "      Agregar nuevo Empleado. " << endl;
+            //     cout << "*     Ingrese el numero de empleados que quiere agregar: ";
+            //     cin >> usuarios;
+            //     cout << endl
+            //          << endl
+            //          << endl;
+            //     /*contador varaible que guarda el numero de empleados creados se compara con
+            //      usuarios para verificar que el numero de usuarios qu se quieren ingresar no supere el maximo de 20
+
+            //      */
+            //     if (contador + 1 == 20 || usuarios > 20 || usuarios + contador > 20)
+            //     {
+            //         cout << "<----------------ERROR--------------->" << endl;
+            //         cout << "Solo se pueden ingresar 20 empleados" << endl;
+            //         cout << endl
+            //              << endl
+            //              << "Empleados agregados :" << contador << endl;
+            //     }
+            //     else
+            //     {
+            //         /*Si no supera el maximo se empieza a recorrer con un cilco for para crear a los usuarios  */
+
+            //         for (int i = 0; i < usuarios; i++)
+            //         {
+            //             contador = contador + 1;
+            //             // Limpia Búfer de datos.
+            //             fflush(stdin);
+            //             cout << "-- Registro " << contador << " --" << endl;
+
+            //             cout << endl
+            //                  << endl
+            //                  << "* Ingrese Nombre: ";
+            //             cin.getline(newRegistro[i].newMaestro.nombre, 20);
+
+            //             cout << "* Ingrese Pais : ";
+            //             cin.getline(newRegistro[i].newMaestro.pais, 20);
+
+            //             cout << "* Ingrese edad: ";
+            //             cin >> newRegistro[i].newMaestro.edad;
+            //             cout << endl
+            //                  << endl;
+            //             //-------------------------------------------------------------------------------------//----
+            //             // opcion = 0;
+            //             fflush(stdin);
+            //             cout << "Ingrese especialidad: ";
+            //             /*Aqui se agregara la especilidad del empleado con un clico do while */
+            //             do
+            //             {
+            //                 opcion = MenuEspecialidades();
+            //                 switch (opcion)
+            //                 {
+            //                 case 1:
+            //                     cout << endl
+            //                          << endl;
+            //                     cout << "Ingrese lenguaje de Programación: ";
+            //                     fflush(stdin);
+            //                     cin.getline(newRegistro[i].newEspecialidad.programación, 50);
+            //                     //   cin >> newRegistro[i].newEspecialidad.programación;
+            //                     break;
+
+            //                 case 2:
+            //                     cout << endl
+            //                          << endl;
+            //                     cout << "Ingrese DB: ";
+            //                     fflush(stdin);
+            //                     cin.getline(newRegistro[i].newEspecialidad.DB, 50);
+            //                     // cin >> newRegistro[i].newEspecialidad.DB;
+            //                     break;
+
+            //                 case 3:
+            //                     cout << endl
+            //                          << endl;
+            //                     cout << "Ingrese Servidors: ";
+            //                     fflush(stdin);
+            //                     cin.getline(newRegistro[i].newEspecialidad.servidores, 50);
+            //                     // cin >> newRegistro[i].newEspecialidad.servidores;
+            //                     break;
+
+            //                 case 4:
+            //                     cout << "/--------------------------------------------------------------/" << endl;
+            //                     break;
+
+            //                 default:
+            //                     cout << "Opción inválida. Por favor, seleccione una opción válida." << endl;
+            //                     break;
+            //                 }
+            //             } while (opcion != 4);
+
+            //             /*En caso se complete se volvera a mostrar el menu para elegir la opcion deseada*/
+
+            //             fflush(stdin);
+            //             // Cantidades = 0;
+
+            //             /*Se hace uso de otro ciclo do while para crear las clases con la fecha
+            //             si cantidades ya tiene un valor pasa a ingresar el curso directamente sin preguntar la cantidad*/
+            //             do
+            //             {
+            //                 if (Cantidades > 0)
+            //                 {
+            //                     opcion = 1;
+            //                 }
+            //                 else
+            //                 {
+            //                     cout << endl
+            //                          << endl;
+            //                     cout << "----------- Agregar cursos -----------" << endl;
+            //                     cout << " Inngrese 1 para agregar un nuevo curso" << endl;
+            //                     cout << " Ingrese 2 para continuar con el formulario " << endl;
+            //                     cout << "* Opcion: ";
+            //                     cin >> opcion;
+            //                 }
+
+            //                 switch (opcion)
+            //                 {
+            //                 case 1: // En este caso se ingresa la cantidad de cursos
+            //                     /*se guarda el valor en una varaible y se recorre para crear los cursos deseados
+            //                     con su fecha se guarda la cantidad de cursos creados para luego poder recorrerlos*/
+            //                     if (Cantidades == 0)
+            //                     {
+            //                         cout << endl
+            //                              << "* Ingrese la cantidad de Cursos: ";
+            //                         cin >> Cantidades;
+            //                         Cantidades = Cantidades + newRegistro[i].newCurso.cantidad;
+            //                         cout << endl
+            //                              << endl;
+            //                     }
+
+            //                     for (int j = newRegistro[i].newCurso.cantidad; j < Cantidades; j++)
+            //                     {
+            //                         fflush(stdin);
+            //                         cout << "* Ingrese Nombre del curso: ";
+            //                         cin >> newRegistro[i].newCurso.clases[j];
+
+            //                         fflush(stdin);
+            //                         cout << "* Ingrese el dia del curso : ";
+            //                         cin >> newRegistro[i].newFecha.dia[j];
+
+            //                         fflush(stdin);
+            //                         cout << "* Ingrese el mes del curso: ";
+            //                         cin >> newRegistro[i].newFecha.mes[j];
+
+            //                         fflush(stdin);
+            //                         cout << "* Ingrese el anio del curso: ";
+            //                         cin >> newRegistro[i].newFecha.anio[j];
+            //                         cout << endl;
+            //                     }
+            //                     newRegistro[i].newCurso.cantidad = Cantidades;
+
+            //                     Cantidades = 0;
+
+            //                     break;
+            //                 case 2:
+            //                     cout << "/--------------------------------------------------------------/" << endl
+            //                          << endl;
+
+            //                     cout << "                    Usuario creado correctamente" << endl
+            //                          << endl;
+            //                     break;
+            //                 default:
+            //                     cout << "      Opción inválida. Por favor, seleccione una opción válida." << endl;
+            //                     break;
+            //                 }
+            //             } while (opcion != 2);
+            //         }
+            //     }
+
+            //    
+             // --------------------------------------------------case 2-------------------------------------------------
